@@ -1,0 +1,17 @@
+.theme-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-dark {
+  color: var(--text-muted);
+  width: 25px;
+  height: 25px;
+}
+.icon-light {
+  color: var(--text-primary);
+  width: 25px;
+  height: 25px;
+}

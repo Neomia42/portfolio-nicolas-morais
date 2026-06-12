@@ -1,0 +1,4 @@
+interface:
+  display_name: "Checkpoint de session"
+  short_description: "Arrêter une session proprement"
+  default_prompt: "Use $checkpoint-session to update the active spec with the current progress checkpoint."
