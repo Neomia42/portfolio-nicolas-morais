@@ -1,53 +1,53 @@
 @import "tailwindcss";
 :root {
-  --background: hsl(215, 42%, 9%);
-  --surface: hsl(218, 39%, 11%);
-  --surface-muted: hsl(212, 69%, 16%);
-  --surface-hover: hsl(209, 100%, 19%);
-  --surface-active: hsl(207, 100%, 23%);
-  --border: hsl(209, 79%, 30%);
-  --border-strong: hsl(211, 66%, 37%);
-  --ring: hsl(211, 65%, 45%);
-  --btn-primary: hsl(206, 100%, 50%);
-  --link: hsl(210, 100%, 72%);
-  --foreground: hsl(205, 100%, 88%);
-  --text-color: hsl(210, 100%, 99%);
+  --site-bg: hsl(215, 42%, 9%);
+  --site-surface: hsl(218, 39%, 11%);
+  --site-surface-muted: hsl(212, 69%, 16%);
+  --site-surface-hover: hsl(209, 100%, 19%);
+  --site-surface-active: hsl(207, 100%, 23%);
+  --site-border: hsl(209, 79%, 30%);
+  --site-border-strong: hsl(211, 66%, 37%);
+  --site-focus-ring: hsl(211, 65%, 45%);
+  --site-accent: hsl(206, 100%, 50%);
+  --site-link: hsl(210, 100%, 72%);
+  --site-text: hsl(210, 100%, 99%);
+  --site-text-muted: hsl(205, 100%, 88%);
 }
 
 :root[data-theme="light"] {
-  --background: hsl(210, 100%, 99%);
-  --surface: hsl(207, 100%, 98%);
-  --surface-muted: hsl(205, 92%, 95%);
-  --surface-hover: hsl(203, 100%, 92%);
-  --surface-active: hsl(206, 100%, 88%);
-  --border: hsl(207, 93%, 83%);
-  --border-strong: hsl(207, 85%, 76%);
-  --ring: hsl(206, 82%, 65%);
-  --btn-primary: hsl(206, 100%, 50%);
-  --link: hsl(208, 88%, 43%);
-  --foreground: hsl(216, 71%, 23%);
-  --text-color: hsl(215, 42%, 9%);
+  --site-bg: hsl(210, 100%, 99%);
+  --site-surface: hsl(207, 100%, 98%);
+  --site-surface-muted: hsl(205, 92%, 95%);
+  --site-surface-hover: hsl(203, 100%, 92%);
+  --site-surface-active: hsl(206, 100%, 88%);
+  --site-border: hsl(207, 93%, 83%);
+  --site-border-strong: hsl(207, 85%, 76%);
+  --site-focus-ring: hsl(206, 82%, 65%);
+  --site-accent: hsl(206, 100%, 50%);
+  --site-link: hsl(208, 88%, 43%);
+  --site-text: hsl(215, 42%, 9%);
+  --site-text-muted: hsl(216, 71%, 23%);
 }
 
-/*Theme inline tailwind */
+/* Tailwind theme aliases */
 @theme inline {
-  --color-background: var(--background);
-  --color-surface: var(--surface);
-  --color-surface-muted: var(--surface-muted);
-  --color-surface-hover: var(--surface-hover);
-  --color-surface-active: var(--surface-active);
-  --color-border: var(--border);
-  --color-border-strong: var(--border-strong);
-  --color-ring: var(--ring);
-  --color-btn-primary: var(--btn-primary);
-  --color-link: var(--link);
-  --color-foreground: var(--foreground);
-  --color-text-color: var(--text-color);
+  --color-background: var(--site-bg);
+  --color-surface: var(--site-surface);
+  --color-surface-muted: var(--site-surface-muted);
+  --color-surface-hover: var(--site-surface-hover);
+  --color-surface-active: var(--site-surface-active);
+  --color-border: var(--site-border);
+  --color-border-strong: var(--site-border-strong);
+  --color-ring: var(--site-focus-ring);
+  --color-accent: var(--site-accent);
+  --color-link: var(--site-link);
+  --color-text: var(--site-text);
+  --color-text-muted: var(--site-text-muted);
 }
 
 body {
-  background-color: var(--background);
-  color: var(--surface-muted);
+  background-color: var(--site-bg);
+  color: var(--site-text);
   overflow-y: scroll;
   font-family: "Roboto", Arial, Sans-serif;
   margin: 0;

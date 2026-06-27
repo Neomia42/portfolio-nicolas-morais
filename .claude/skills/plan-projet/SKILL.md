@@ -38,7 +38,6 @@ Si le cadrage est trop flou, l’agent doit poser les questions minimales néces
 - Seules les décisions non bloquantes peuvent être placées dans `Décisions reportées`.
 
 
-```
 
 ## Méthode
 
@@ -137,8 +136,7 @@ J’attends ta validation avant de modifier `Plan.md`.
 
 ## Format recommandé pour Plan.md
 
-```Markdown
-## Format recommandé pour Plan.md
+```md
 
 # Plan du projet
 

@@ -14,7 +14,7 @@ function App() {
     <div>
       <button
         type="button"
-        className="bg-none color text-text-color"
+        className="bg-none color text-text"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         {theme === "dark" ? (
