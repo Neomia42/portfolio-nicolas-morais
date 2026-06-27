@@ -6,12 +6,12 @@
 }
 
 .icon-dark {
-  color: var(--text-muted);
+  color: var(--site-text-muted);
   width: 25px;
   height: 25px;
 }
 .icon-light {
-  color: var(--text-primary);
+  color: var(--site-text);
   width: 25px;
   height: 25px;
 }

@@ -39,6 +39,7 @@
   --color-border: var(--site-border);
   --color-border-strong: var(--site-border-strong);
   --color-ring: var(--site-focus-ring);
+  --color-focus-ring: var(--site-focus-ring);
   --color-accent: var(--site-accent);
   --color-link: var(--site-link);
   --color-text: var(--site-text);
