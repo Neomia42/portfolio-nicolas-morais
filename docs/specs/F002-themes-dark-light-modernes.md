@@ -72,33 +72,49 @@ Cette feature est structurante pour tout le portfolio : les futures sections dev
 ## Points d'implementation
 
 - [x] Point 1 - Verifier et consolider les variables CSS des themes dark et light
-- [ ] Point 2 - Appliquer les tokens de theme aux zones visibles existantes
-- [ ] Point 3 - Corriger le fonctionnement du selecteur dark/light
-- [ ] Point 4 - Ajouter un libelle accessible au bouton de theme
-- [ ] Point 5 - Verifier que le theme dark revient par defaut au rechargement
-- [ ] Point 6 - Verifier le rendu visuel et les contrastes de base dans les deux themes
+- [x] Point 2 - Appliquer les tokens de theme aux zones visibles existantes
+- [x] Point 3 - Corriger le fonctionnement du selecteur dark/light
+- [x] Point 4 - Ajouter un libelle accessible au bouton de theme
+- [x] Point 5 - Verifier que le theme dark revient par defaut au rechargement
+- [x] Point 6 - Verifier le rendu visuel et les contrastes de base dans les deux themes
 
 ## Etat d'avancement
 
 Date :
-- 2026-06-27
+- 2026-06-29
 
 Points termines :
 - Point 1 - Verifier et consolider les variables CSS des themes dark et light
+- Point 2 - Appliquer les tokens de theme aux zones visibles existantes
+- Point 3 - Corriger le fonctionnement du selecteur dark/light
+- Point 4 - Ajouter un libelle accessible au bouton de theme
+- Point 5 - Verifier que le theme dark revient par defaut au rechargement
+- Point 6 - Verifier le rendu visuel et les contrastes de base dans les deux themes
 
 Prochain point :
-- Point 2 - Appliquer les tokens de theme aux zones visibles existantes
+- Aucun. La feature F002 est terminee.
 
 Etat actuel :
 - La spec F002 est creee et decoupee.
 - Le point 1 est implemente et valide.
+- Le point 2 est implemente et valide.
+- Le point 3 est implemente et valide.
+- Le point 4 est implemente et valide.
+- Le point 5 est verifie et valide.
+- Le point 6 est verifie et valide.
 - Les variables CSS de theme sont consolidees.
 - Les references invalides de `Header.css` aux anciennes variables de texte ont ete corrigees.
-- Le build de verification du point 1 est passe.
+- Les zones visibles existantes utilisent les tokens de theme pour les fonds, textes, surfaces, bordures et interactions de base.
+- Le selecteur applique `data-theme="light"` en theme light et retire l'attribut pour revenir au theme dark par defaut.
+- Le bouton de theme possede un libelle accessible dynamique.
+- Aucune persistance de theme ni gestion automatique du theme systeme n'a ete detectee dans `src`.
+- Le theme dark revient par defaut au rechargement via l'etat initial React et le `:root` CSS.
+- Les contrastes de base calcules passent les seuils AA sur les couples texte/fond principaux des deux themes.
+- Le build et le lint de verification du point 6 sont passes.
+- La verification navigateur Playwright n'a pas pu etre finalisee car le serveur Vite lance en arriere-plan ne restait pas accessible dans cet environnement.
 
 Limites a respecter a la reprise :
-- Reprendre au point 2 uniquement.
-- Ne pas modifier le fonctionnement du selecteur dark/light avant le point 3.
+- Aucun point F002 restant.
 - Ne pas ajouter de persistance dans `localStorage`.
 - Ne pas ajouter de gestion automatique du theme systeme.
 - Ne pas ajouter de dependance.
@@ -106,14 +122,17 @@ Limites a respecter a la reprise :
 - Ne pas traiter les contenus definitifs des sections presentation, competences ou projets.
 
 Points flous ou risques :
-- Le point 2 doit rester limite a l'application des tokens de theme aux zones visibles existantes.
-- Le libelle accessible du bouton de theme est prevu au point 4, pas au point 2.
-- Les contrastes complets seront verifies au point 6.
+- La verification visuelle navigateur pourra etre refaite plus tard dans un environnement ou le serveur Vite reste accessible en arriere-plan.
 
 Notes :
 - Spec fonctionnelle creee.
 - Decoupage technique valide.
 - Point 1 implemente et valide.
+- Point 2 implemente et valide.
+- Point 3 implemente et valide.
+- Point 4 implemente et valide.
+- Point 5 verifie et valide.
+- Point 6 verifie et valide.
 - Pas de persistance du theme dans `localStorage` pour F002.
 - Pas de gestion automatique du theme systeme pour F002.
 - Le bouton de theme doit avoir un libelle accessible dans F002.
