@@ -1,12 +1,13 @@
 ---
 name: architecture-projet
 description: >-
-Utiliser ce skill pour aider à créer ou mettre à jour docs/architecture.md  
-à partir du Plan.md, des ADR validées et de la structure réelle du repo.  
-L’agent doit décrire l’organisation technique du projet, les dossiers, les flux  
-principaux et les règles de placement du code, sans choisir une nouvelle stack  
-ni modifier le code.
+  Utiliser ce skill pour aider à créer ou mettre à jour docs/architecture.md
+  à partir du Plan.md, des ADR validées et de la structure réelle du repo.
+  L’agent doit décrire l’organisation technique du projet, les dossiers, les flux
+  principaux et les règles de placement du code, sans choisir une nouvelle stack
+  ni modifier le code.
 ---
+
 # Architecture projet
 
 ## Principe
@@ -91,6 +92,7 @@ Si une décision technique essentielle manque, l’agent doit le signaler avant 
 ## Limites actuelles
 
 ## Points à revoir plus tard
+```
 ````
 
 J’attends ta validation avant de modifier `docs/architecture.md`.
@@ -145,8 +147,8 @@ mon-projet/
 
 ## Règles de placement du code
 
-- Les composants UI vont dans le front. 
-- La logique métier partagée va dans `packages/shared` si nécessaire. 
+- Les composants UI vont dans le front.
+- La logique métier partagée va dans `packages/shared` si nécessaire.
 - Les routes API vont dans `apps/api`.
 - Les specs de features vont dans `docs/specs`.
 - Les décisions techniques vont dans `docs/decisions`.
